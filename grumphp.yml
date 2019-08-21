@@ -1,0 +1,22 @@
+parameters:
+  tasks:
+    php_compatibility: ~
+    php_check_syntax:
+      ignore_patterns: []
+      triggered_by:
+        - php
+        - module
+        - inc
+    phpcs:
+      standard:
+        - vendor/hkirsman/code-quality/phpcs.xml
+      ignore_patterns:
+        - cfg/
+        - libraries/
+      triggered_by:
+        - php
+        - module
+        - inc
+  extensions:
+    - hkirsman\PhpCompatibilityTask\ExtensionLoader
+    - hkirsman\PhpCheckSyntaxTask\ExtensionLoader

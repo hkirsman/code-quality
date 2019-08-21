@@ -1,0 +1,19 @@
+{
+    "name": "hkirsman/code-quality",
+    "description": "Code Quality checker wrapper for GrumPHP",
+    "version": "0.0.1",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Hannes Kirsman",
+            "email": "hannes.kirsman@wunder.io"
+        }
+    ],
+    "require": {
+        "phpro/grumphp": "^0.15",
+        "drupal/coder": "^8",
+        "hkirsman/grumphp-php-compatibility": "^0.0.1",
+        "phpcompatibility/php-compatibility": "^9",
+        "hkirsman/grumphp-php-check-syntax": "^0.0.1"
+    }
+}
