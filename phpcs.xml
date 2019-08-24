@@ -15,7 +15,7 @@
     <!-- exclude CSS files, where we don't usually follow Drupal standards  -->
     <exclude-pattern>*.css</exclude-pattern>
 
-    <rule ref="Drupal">
+    <rule ref="vendor/drupal/coder/coder_sniffer/Drupal">
         <exclude name="Drupal.Files.TxtFileLineLength" />
         <exclude name="Drupal.InfoFiles.AutoAddedKeys" />
     </rule>
