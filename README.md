@@ -23,38 +23,12 @@ This repository currently has following checks:
 
 This needs to be done only once either while creating a project or enabling code checks in existing project.
 
-`composer require wunderio/code-quality --dev`
+```
+composer require wunderio/code-quality --dev
+cp vendor/wunderio/code-quality/grumphp.yml.dist ./grumphp.yml
+```
 
-Add grumphp.yml to same location as composer.json:
-````yml
-parameters:
-  tasks:
-    php_compatibility:
-      testVersion: "7.3"
-      triggered_by:  [php, inc, module, install]
-    check_file_permissions: ~
-    php_check_syntax:
-      ignore_patterns: []
-      triggered_by:
-        - php
-        - module
-        - inc
-    phpcs:
-      standard:
-        - vendor/wunderio/code-quality/phpcs.xml
-        - vendor/wunderio/code-quality/phpcs-security.xml
-      ignore_patterns:
-        - cfg/
-        - libraries/
-      triggered_by:
-        - php
-        - module
-        - inc
-  extensions:
-    - wunderio\PhpCompatibilityTask\ExtensionLoader
-    - wunderio\PhpCheckSyntaxTask\ExtensionLoader
-    - wunderio\CheckFilePermissions\ExtensionLoader
-````
+The commit hook for GrumPHP is automatically installed on composer require.
 
 ## Custom PHP CodeSniffer rules
 
@@ -73,3 +47,12 @@ parameters:
 The pre-commit hook will be automatically run upon executing `git commit`.
 
 The code scanning can be avoided by `git commit --no-verify`.
+
+You can run the checks manually with: `./bin/grumphp run`
+
+## Usage in Continuous Integration
+You can easily use the code quality checkers on your CI (Jenkins/GitLab CI) by adding this line:
+
+```
+./bin/grumphp run --no-ansi --no-interaction
+```
