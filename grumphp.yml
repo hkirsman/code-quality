@@ -9,7 +9,7 @@ parameters:
         - inc
     phpcs:
       standard:
-        - vendor/hkirsman/code-quality/phpcs.xml
+        - vendor/wunderio/code-quality/phpcs.xml
       ignore_patterns:
         - cfg/
         - libraries/
@@ -18,5 +18,5 @@ parameters:
         - module
         - inc
   extensions:
-    - hkirsman\PhpCompatibilityTask\ExtensionLoader
-    - hkirsman\PhpCheckSyntaxTask\ExtensionLoader
+    - wunderio\PhpCompatibilityTask\ExtensionLoader
+    - wunderio\PhpCheckSyntaxTask\ExtensionLoader

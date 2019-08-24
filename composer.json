@@ -12,8 +12,8 @@
     "require": {
         "phpro/grumphp": "^0.15",
         "drupal/coder": "^8",
-        "hkirsman/grumphp-php-compatibility": "^0.0.1",
         "phpcompatibility/php-compatibility": "^9",
-        "hkirsman/grumphp-php-check-syntax": "^0.0.1"
+        "wunderio/grumphp-php-compatibility": "^0.2.1",
+        "wunderio/grumphp-php-check-syntax": "^0.1.0"
     }
 }
