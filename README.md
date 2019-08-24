@@ -12,6 +12,7 @@ This repository currently has following checks:
 * PHP Drupal Coding Standards
 * PHP 7.3 Compatibility
 * PHP syntax
+* Shell script exec bits
 * PHP Code security
 
 ## Pre-requisites
@@ -28,7 +29,10 @@ Add grumphp.yml to same location as composer.json:
 ````yml
 parameters:
   tasks:
-    php_compatibility: ~
+    php_compatibility:
+      testVersion: "7.3"
+      triggered_by:  [php, inc, module, install]
+    check_file_permissions: ~
     php_check_syntax:
       ignore_patterns: []
       triggered_by:
@@ -49,6 +53,7 @@ parameters:
   extensions:
     - wunderio\PhpCompatibilityTask\ExtensionLoader
     - wunderio\PhpCheckSyntaxTask\ExtensionLoader
+    - wunderio\CheckFilePermissions\ExtensionLoader
 ````
 
 ## Custom PHP CodeSniffer rules

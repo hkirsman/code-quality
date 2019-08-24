@@ -1,6 +1,9 @@
 parameters:
   tasks:
-    php_compatibility: ~
+    php_compatibility:
+      testVersion: "7.3"
+      triggered_by:  [php, inc, module, install]
+    check_file_permissions: ~
     php_check_syntax:
       ignore_patterns: []
       triggered_by:
@@ -21,3 +24,4 @@ parameters:
   extensions:
     - wunderio\PhpCompatibilityTask\ExtensionLoader
     - wunderio\PhpCheckSyntaxTask\ExtensionLoader
+    - wunderio\CheckFilePermissions\ExtensionLoader

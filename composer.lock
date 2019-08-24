@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd13ad2fcee33d065df825e02d01519c",
+    "content-hash": "51ea49ad75c89163f24b18e2fc18e9e0",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1852,6 +1852,42 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2019-07-24T14:47:54+00:00"
+        },
+        {
+            "name": "wunderio/grumphp-file-permissions",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wunderio/grumphp-file-permissions.git",
+                "reference": "e9aa666fc360bd075231eb73e8695f54085d9e7b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wunderio/grumphp-file-permissions/zipball/e9aa666fc360bd075231eb73e8695f54085d9e7b",
+                "reference": "e9aa666fc360bd075231eb73e8695f54085d9e7b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6",
+                "phpro/grumphp": "^0.15"
+            },
+            "bin": [
+                "bin/check_perms"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "wunderio\\CheckFilePermissions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Hannes Kirsman",
+                    "email": "hkirsman@gmail.com"
+                }
+            ],
+            "time": "2019-08-23T21:20:29+00:00"
         },
         {
             "name": "wunderio/grumphp-php-check-syntax",
