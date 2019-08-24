@@ -12,6 +12,7 @@ This repository currently has following checks:
 * PHP Drupal Coding Standards
 * PHP 7.3 Compatibility
 * PHP syntax
+* PHP Code security
 
 ## Pre-requisites
 
@@ -21,7 +22,7 @@ This repository currently has following checks:
 
 This needs to be done only once either while creating a project or enabling code checks in existing project.
 
-`composer require hkirsman/code-quality:dev-master --dev`
+`composer require wunderio/code-quality --dev`
 
 Add grumphp.yml to same location as composer.json:
 ````yml
@@ -36,7 +37,8 @@ parameters:
         - inc
     phpcs:
       standard:
-        - vendor/hkirsman/code-quality/phpcs.xml
+        - vendor/wunderio/code-quality/phpcs.xml
+        - vendor/wunderio/code-quality/phpcs-security.xml
       ignore_patterns:
         - cfg/
         - libraries/
@@ -45,8 +47,8 @@ parameters:
         - module
         - inc
   extensions:
-    - hkirsman\PhpCompatibilityTask\ExtensionLoader
-    - hkirsman\PhpCheckSyntaxTask\ExtensionLoader
+    - wunderio\PhpCompatibilityTask\ExtensionLoader
+    - wunderio\PhpCheckSyntaxTask\ExtensionLoader
 ````
 
 ## Custom PHP CodeSniffer rules
