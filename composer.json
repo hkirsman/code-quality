@@ -15,6 +15,7 @@
         "phpcompatibility/php-compatibility": "^9",
         "wunderio/grumphp-php-compatibility": "^0.2.1",
         "wunderio/grumphp-php-check-syntax": "^0.1.0",
-        "wunderio/grumphp-file-permissions": "^0.1.0"
+        "wunderio/grumphp-file-permissions": "^0.1.0",
+        "pheromone/phpcs-security-audit": "^2.0"
     }
 }
