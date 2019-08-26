@@ -21,6 +21,7 @@ parameters:
         - php
         - module
         - inc
+      report_width: 120
   extensions:
     - wunderio\PhpCompatibilityTask\ExtensionLoader
     - wunderio\PhpCheckSyntaxTask\ExtensionLoader
