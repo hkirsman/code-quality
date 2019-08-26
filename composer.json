@@ -1,7 +1,6 @@
 {
     "name": "hkirsman/code-quality",
     "description": "Code Quality checker wrapper for GrumPHP",
-    "version": "0.0.1",
     "type": "project",
     "authors": [
         {
