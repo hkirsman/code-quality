@@ -24,8 +24,8 @@ This repository currently has following checks:
 This needs to be done only once either while creating a project or enabling code checks in existing project.
 
 ```
-composer require wunderio/code-quality --dev
-cp vendor/wunderio/code-quality/grumphp.yml.dist ./grumphp.yml
+composer require hkirsman/code-quality --dev
+cp vendor/hkirsman/code-quality/grumphp.yml.dist ./grumphp.yml
 ```
 
 The commit hook for GrumPHP is automatically installed on composer require.
