@@ -3,6 +3,8 @@
 <ruleset name="Security Audit">
     <description>Security audit rules</description>
 
+    <config name="installed_paths" value="vendor/pheromone/phpcs-security-audit/Security" />
+
     <!-- exclude some Drupal files that contain issues -->
     <exclude-pattern>*default.settings.php</exclude-pattern>
 
